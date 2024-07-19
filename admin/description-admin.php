@@ -26,8 +26,13 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
                 <img src=".<?php echo htmlspecialchars ($article['url_image']) ?>" alt="<?= $article['titre_image'] ?>">
                 <figcaption>
                     <strong><?php echo htmlspecialchars( $article['titre_image']) ?></strong>
-                 
-                    <a class="button" href='./descriptionArtcile.php?id=<?= $article['id'] ?>'>Lire l'article</a>
+                    <p><?= htmlspecialchars( $article['description']) ?></p>
+        
+                    <img src="<?php echo htmlspecialchars ($article['image_1']) ?>" alt="<?= $article['titre_image'] ?>"/>
+                    <img src="<?php echo htmlspecialchars ($article['image_2']) ?>" alt="<?= $article['titre_image'] ?>"/>
+                    <img src=".<?php echo htmlspecialchars ($article['image_3']) ?>" alt="<?= $article['titre_image'] ?>"/>
+                    
+                    <a class="button" href='../descriptionArtcile.php?id=<?= $article['id'] ?>'>Lire l'article</a>
                     <br>
                     <a href="formulaireUpdate.php?id=<?= $article['id'] ?>">Modifier l'article</a>
                     <br>

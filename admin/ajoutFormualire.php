@@ -10,7 +10,7 @@
 <body>
     <h1>Administration</h1>
 
-    <a href="description-admin.php">Liste-Article</a> | <a href="ajoutFormulaire.php">Ajout article</a>|
+    <a href="description-admin.php">Liste-Article</a>
    
     <h2>Ajout nouveau article</h2>
 
@@ -23,6 +23,14 @@
 
         <label for="description">Description:</label>
         <textarea id="description" name="description" required></textarea><br>
+        <label for="image_1"> image_1:</label>
+        <input type="text" id="image_1" name="image_1" size="75" required ><br>
+
+        <label for="image_2">image_2:</label>
+        <input type="text" id="image_2" name="image_2" size="75" required ><br>
+
+        <label for="image_3">image_3:</label>
+        <input type="text" id="image_3" name="image_3" size="75" required><br>
 
         <input type="submit" value="Ajouter l'article">
         <input type="reset" value="Annuler">

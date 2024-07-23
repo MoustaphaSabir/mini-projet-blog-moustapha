@@ -18,8 +18,8 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
     <style>
         img {
             margin-top: 20px;
-            width: 500px;
-            border-radius: 10px;
+            width: 700px;
+            border-radius:5px;
            margin-left: 10px;
         }
     </style>
@@ -38,6 +38,15 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
                 </figcaption>
             </figure>
         <?php endforeach; ?>
+        <footer>
+        <!-- <img src="/images/logo-nav-masta.png" alt="logo" class="logo"> -->
+        <a href="formulaire.php">CONTACT-MOI</a>
+        <p>© Copyright 2024 | Tous droits réservés</p>
+        <ul>
+            <li>Mentions légale</li>
+            <li>Plan du site</li>
+        </ul>
+    </footer>
 
 </body>
 </html>

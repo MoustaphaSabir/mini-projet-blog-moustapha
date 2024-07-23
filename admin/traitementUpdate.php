@@ -24,5 +24,3 @@ $requete->execute([
 
 header('Location: description-admin.php');
 exit;
-?>
-

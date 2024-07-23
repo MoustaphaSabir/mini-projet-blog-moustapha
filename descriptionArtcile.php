@@ -11,10 +11,12 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>description Article</title>
     <style>
         img {
-            width: 200px;
+            width: 300px;
         }
     </style>
 </head>
@@ -28,7 +30,7 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
             <figcaption>
                 <img src="<?php echo htmlspecialchars ($article['image_1']) ?>" alt="<?= $article['titre_image'] ?>"/>
                 <img src="<?php echo htmlspecialchars ($article['image_2']) ?>" alt="<?= $article['titre_image'] ?>"/>
-                <img src=".<?php echo htmlspecialchars ($article['image_3']) ?>" alt="<?= $article['titre_image'] ?>"/>
+                <img src="<?php echo htmlspecialchars ($article['image_3']) ?>" alt="<?= $article['titre_image'] ?>"/>
                 <a class="boutton"  href='index.php?id=<?= $article['id'] ?>'>Retour d'accueil</a>
             </figcaption>
         </figure> 

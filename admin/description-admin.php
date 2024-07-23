@@ -11,10 +11,19 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/> -->
+    <link rel="shortcut icon" href="../fafavicon.ico" type="image/x-icon">
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
 
     <title>Admin-listes des articles</title>
 </head>
+<style>
+     img {
+            margin-top: 20px;
+            width: 400px;
+            border-radius:5px;
+           margin-left: 10px;
+        }
+</style>
 <body>
     
     <h1>Administration</h1>
@@ -30,7 +39,7 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
         
                     <img src="<?php echo htmlspecialchars ($article['image_1']) ?>" alt="<?= $article['titre_image'] ?>"/>
                     <img src="<?php echo htmlspecialchars ($article['image_2']) ?>" alt="<?= $article['titre_image'] ?>"/>
-                    <img src=".<?php echo htmlspecialchars ($article['image_3']) ?>" alt="<?= $article['titre_image'] ?>"/>
+                    <img src="<?php echo htmlspecialchars ($article['image_3']) ?>" alt="<?= $article['titre_image'] ?>"/>
                     
                     <a class="button" href='../descriptionArtcile.php?id=<?= $article['id'] ?>'>Lire l'article</a>
                     <br>

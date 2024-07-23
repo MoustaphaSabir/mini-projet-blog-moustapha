@@ -11,11 +11,10 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Et si jardiner c’était facile ? Retrouvez tous les conseils et astuces de notre expert pour entretenir facilement votre jardin et en profiter. A vous de jouer.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
-
-
-    <title>Jardin</title>
+    <title>Accueil_Jardin</title>
     <style>
         img {
             margin-top: 20px;
@@ -25,8 +24,10 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
         }
     </style>
 </head>
-<body>
+<body>   
         <button><a href="admin/description-admin.php">Admin-Article</a></button> 
+         <strong><h1>Mon blog Jardin</h1></strong>
+       
         <?php foreach ($articles as $article): ?>
             <figure>
                 <strong><?= htmlspecialchars( $article['titre_image']) . '<br>'?></strong>

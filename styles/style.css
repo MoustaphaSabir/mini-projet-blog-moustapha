@@ -1,9 +1,126 @@
+body{
+    font-family: "Bona Nova SC", serif;
+    font-weight: 600px;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+}
+
+
+h1, h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-left: 10px;
+  
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 600px;
+    text-align: center;
+   
+}
+
+h1:hover {
+    text-decoration: underline;
+    color: rgb(58, 15, 232);
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.admin-button {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.admin-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.admin-button a:hover {
+    background-color: #0056b3;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.article {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 500px;
+    text-align: left;
+}
+
+.article h2 {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+}
+
+.container-image {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.container-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 15px;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* padding: 200px; */
     background-color: rgb(58, 15, 232);
     border-radius: 10px;
     text-align: center;

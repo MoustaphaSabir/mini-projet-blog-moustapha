@@ -19,7 +19,7 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <div class="container">
         <button class="admin-button"><a href="admin/description-admin.php">Admin-Article</a></button>
-        <strong><h1>Mon blog Jardin</h1></strong>
+        <strong><h1>Mini blog Jardin</h1></strong>
 
         <div class="articles">
             <?php foreach ($articles as $article): ?>

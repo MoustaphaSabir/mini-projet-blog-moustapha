@@ -19,7 +19,7 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
 <style>
      img {
             margin-top: 20px;
-            width: 400px;
+            width: 300px;
             border-radius:5px;
            margin-left: 10px;
         }
@@ -28,6 +28,7 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
     
     <h1>Administration</h1>
     <a href="ajoutFormualire.php">Ajout Formulaire</a>|
+    <a href="../index.php">Retour d'Accueil_Jardin</a>
     <h2>Liste-Article</h2>
 
         <?php foreach ($articles as $article): ?>

@@ -1,13 +1,12 @@
 body{
     font-family: "Bona Nova SC", serif;
+    background-image: url(../images/bacground.jpeg);
     font-weight: 600px;
     font-style: italic;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 0;
-    padding: 0;
     color: #333;
     
 }
@@ -18,7 +17,6 @@ h1, h2 {
     margin-top: 10px;
     margin-left: 10px;
     font-weight: bold;
-  
     margin-bottom: 10px;
     text-decoration: none;
     font-weight: 600px;
@@ -118,14 +116,15 @@ figcaption {
 
 
 footer {
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     background-color: rgb(58, 15, 232);
     border-radius: 10px;
     text-align: center;
     color: white;
+    margin-top: 50px;
 }
 
 footer a {
@@ -159,21 +158,18 @@ footer ul {
 }
 
 /* Responsive Styles */
-@media (min-width: 600px) {
-    .logo {
+ /* @media (min-width: 600px) {
+    .footer {
         width: 70px; 
         height: 70px;
     }
 
-    header a {
+    footer a {
         font-size: 1.2em; 
     }
 
-    .hero-header {
-        height: 50vh; 
-    }
 
-    .hero-header h1 {
-        font-size: 2em; 
+    footer p {
+        font-size: 1em; 
     }
-}
+}  */

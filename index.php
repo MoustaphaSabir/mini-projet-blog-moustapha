@@ -34,7 +34,7 @@ $articles = $reponses->fetchAll(PDO::FETCH_ASSOC);
                 </figure>
             <?php endforeach; ?>
         </div>
-    </div>
+  
 
     <footer>
         <div class="bloc-contact">
